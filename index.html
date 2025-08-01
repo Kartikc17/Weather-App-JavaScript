@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="timer-container">
+        <h1 id="time"> </h1>
+        <button id="stop-button">Stop-Time</button>
+    </div>
+
+    <div class="section">
+        <h4>User Location:</h4>
+        <p>City: <span id="Ucity-name"></span></p>
+        <p>Data & Time: <span id="Ucity-time"></span></p>
+        <p>Temp: <span id="Ucity-temp"></span></p>
+        <button id="get-location-button">Get Location</button>
+    </div>
+
+    <div class="section">
+        <input type="text" id="city-input" placeholder="Enter City Name">
+        <button id="search-button">Search</button>
+    </div>
+    <div class="section">
+        <h4>Searched City Info:</h4>
+        <p>City: <span id="city-name"></span></p>
+        <p>Data & Time: <span id="city-time"></span></p>
+        <p>Temp: <span id="city-temp"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

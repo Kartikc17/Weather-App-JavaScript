@@ -1,0 +1,143 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to top right, #74ebd5, #acb6e5);
+    color: #333;
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Time Display */
+#time {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+/* General Section Styling */
+.section {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 16px;
+    padding: 25px 30px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.section h4 {
+    font-size: 1.4rem;
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+/* Input & Button Styling */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border: 2px solid #b2dfdb;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #4db6ac;
+    background-color: #f0fefc;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    background-color: #4fc3f7;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(79, 195, 247, 0.4);
+}
+
+button:hover {
+    background-color: #039be5;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Info Text */
+p {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+span {
+    font-weight: 600;
+    color: #00796b;
+}
+
+.timer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    max-width: 600px;
+    margin: 20px auto;
+    gap: 15px; /* This adds spacing between children */
+}
+
+/* Time text */
+#time {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Stop button */
+#stop-button {
+    padding: 10px 15px;
+    background-color: #f3f1f1;
+    color: #050000;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#stop-button:hover {
+    background-color: #0b0100;
+    color: white;
+}
+
+/* Responsive for smaller screens */
+@media screen and (max-width: 600px) {
+    .timer-container {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    #stop-button {
+        width: 100%;
+    }
+}
